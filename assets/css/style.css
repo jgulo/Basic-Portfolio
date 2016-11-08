@@ -1,3 +1,4 @@
+/* main containers  */
 body{
 	margin:0px;
 	background-image:url('../images/seigaiha.png');
@@ -25,6 +26,7 @@ body{
 	height:100%;
 }
 
+/* header content */
 #namebox{
 	float:left;
 	width:250px;
@@ -33,12 +35,6 @@ body{
 	text-align:center;
 	padding-left: 40px;
 	padding-right:40px;
-}
-
-h1{
-	color:white;
-	vertical-align: middle;
-	font-family: 'Georgia', Times, "Times New Roman", serif;
 }
 
 nav{
@@ -70,47 +66,29 @@ a,li{
 	text-decoration:none;
 }
 
-#main{
-	width:580px;
-	float:left;
-	margin-top:40px;
-	margin-bottom:70px;
-	text-align:left;
-	background-color:#ffffff;
-	border: solid 2px #dddddd;
-	padding:20px 30px 20px 30px;
+h1{
+	color:white;
+	vertical-align: middle;
+	font-family: 'Georgia', Times, "Times New Roman", serif;
 }
 
-#title{
-	color:#4aaaa5;
-	font-family: 'Georgia', Times, Times New Roman, serif;
-}
 
-#connect{
-	width:270px;
-	height:200px;
-	float:right;
-	margin-top:40;
-	text-align:left;
-	background-color:white;
-	border: solid 2px #eee;
-	/* padding:20px 30px 20px 30px; */
-}
-
-#connect_content{
-	display:block;
-	margin:auto;
-	border: solid 2px black;
-	padding-left:32px;
-	padding-right:32px;
-
-}
 
 hr{
 	border-top: solid 2px #ddd;
 	opacity:.75;
 }
 
+#main{
+	width:580px;
+	float:left;
+	margin-top:40px;
+	margin-bottom:90px;
+	text-align:left;
+	background-color:#ffffff;
+	border: solid 2px #dddddd;
+	padding:20px 30px 20px 30px;
+}
 
 #profile{
 	width:200;
@@ -119,9 +97,38 @@ hr{
 	margin-right:20px;
 }
 
+/* connect div */
+#connect{
+	display:block;
+	width:270px;
+	height:200px;
+	float:right;
+	margin-top:40;
+	text-align:left;
+	background-color:white;
+	border: solid 2px #eee;
+	position:relative;
+}
+
+#connect_content{
+	display:block;
+	height:200;
+	border: solid 2px black;
+	text-align: center;
+	position:absolute; 
+	padding:0 37 0 37;
+	margin:auto;
+}
+
 img.connect_img{
 	height:61px;
 	width:61px;
+}
+
+#title{
+	color:#4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	text-align: left;
 }
 
 /* Portfolio Table */
@@ -129,9 +136,7 @@ table{
 	width:100%;
 	margin:0px;
 	padding:0;
-	border: solid 2px black;
 }
-
 
 
 div.portfolio_img{
@@ -148,6 +153,19 @@ div.img_tag{
 	line-height: 60px;
 	color:white;
 }
+
+div.img_tag_right{
+	width:250px;
+	height:60px;
+	text-align:center;
+	background-color:#4aaaa5;
+	bottom:15;
+	line-height: 60px;
+	color:white;
+	position:absolute;
+	right:0;
+}
+
 
 /* Contact Form */
 .form{
